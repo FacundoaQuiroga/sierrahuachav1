@@ -1,0 +1,103 @@
+
+
+/*=============================================
+INFO-HABITACION
+=============================================*/
+
+.infoHabitacion{
+	position: relative;
+	margin-top:-20px;
+}
+
+.infoHabitacion .colIzqHabitaciones{
+	position:relative;
+	margin-top:-170px;
+}
+
+.infoHabitacion .colIzqHabitaciones ul li a{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size:18px;
+}
+
+.infoHabitacion .colIzqHabitaciones ul li a.active{
+	color:#FFE060 !important;
+}
+
+.infoHabitacion .colIzqHabitaciones .nav-link{
+	border-right:1px solid white;
+}
+
+
+.infoHabitacion .colIzqHabitaciones .fa-angle-right:before{
+    content: "\f105";
+    background: rgba(255,255,255,.8);
+    padding: 20px 10px;
+ }
+
+.infoHabitacion .colIzqHabitaciones .fa-angle-left:before {
+    content: "\f104";
+    background: rgba(255,255,255,.8);
+    padding: 20px 10px;
+}
+
+.colIzqHabitaciones button{
+	border-radius:0;
+	background:black;
+	color:white;
+}
+
+.colIzqHabitaciones p{
+	line-height:30px;
+	color:#666;
+}
+
+.colorTitulos{
+	color:#847059;
+}
+
+.colDerHabitaciones{
+	transition:0.3s all;
+}
+
+
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px hacia abajo)
+=============================================*/
+
+@media (max-width:768px){
+
+
+	.infoHabitacion .colIzqHabitaciones .nav-link{
+		border-right:0;
+		border:1px solid #999;
+	}
+
+	.infoHabitacion .colIzqHabitaciones .cabeceraHabitacion{
+		background: black;
+	}
+
+	.infoHabitacion .colIzqHabitaciones ul li{
+		background:#333;
+	}
+
+	.infoHabitacion .colIzqHabitaciones ul li a.active{
+		background-color: black !important;
+	}
+
+	.infoHabitacion .colIzqHabitaciones ul li a.active i{
+		display:none;
+	}
+
+	.infoHabitacion .categoria{
+		color:#af9475 !important;
+	}
+
+	.descripcionHabitacion h1{
+		font-size:30px;
+	}
+
+
+
+}

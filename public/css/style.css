@@ -1,0 +1,78 @@
+/*=============================================
+GLOBAL
+=============================================*/
+h1 span{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 100;
+}
+.fc-today{
+    background:rgba(255,255,255,0) !important;
+}
+
+
+/*=============================================
+HABITACIONES
+=============================================*/
+
+.habitaciones .row div[class*="col"] figure{
+	position:relative;
+	overflow: hidden;
+}
+
+.habitaciones .row div[class*="col"] figure img{
+	transform: scale(1, 1);
+	transition: 1s all;
+}
+
+.habitaciones .row div[class*="col"] figure img:hover{
+	transform: scale(1.1, 1.1);
+	transition: 1s all;
+}
+
+.habitaciones .row div[class*="col"] figure h1{
+	position:absolute;
+	top:45%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	transition:.3s all;
+}
+
+.habitaciones .row div[class*="col"] figure h1:hover{
+	filter: invert(100%);
+	transition:.3s all;
+}
+
+.habitaciones .row div[class*="col"] figure p{
+	background:black;
+	color:#aaa;
+	padding-left:0;
+	padding-right:0;
+}
+
+.habitaciones .row div[class*="col"] figure h3{
+	background:#FFD185;
+}
+
+.habitaciones .row div[class*="col"] figure h5{
+	color:#777;
+}
+
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px hacia abajo)
+=============================================*/
+
+@media (max-width:768px){
+
+
+
+	.habitaciones .row div[class*="col"] figure p{
+		padding-left:4px;
+		padding-right:4px;
+	}
+
+
+
+
+}
+
