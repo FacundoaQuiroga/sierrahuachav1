@@ -113,13 +113,7 @@ INFO HABITACIÓN
 
                         <br>
 
-                        <h3>PLAN CONTINENTAL</h3>
 
-                        <p>(Precio x pareja 1 día 1 noche, incluye: desayuno)<br>
-                            Temporada Baja:$300 USD<br>
-                            Temporada Alta $350 USD</p>
-
-                        <br>
 
                         <p>Hora de entrada (Check in) 3:00 pm | Hora de salida (Check out) 1:00 pm</p>
 
@@ -185,7 +179,7 @@ INFO HABITACIÓN
                         <li>
                             <h5>
                                 <i class="fas fa-bed w-25 colorTitulos"></i>
-                                <span class="text-dark small">cama 2 x 2</span>
+                                <span class="text-dark small">camas 5</span>
                             </h5>
                         </li>
 
@@ -203,12 +197,6 @@ INFO HABITACIÓN
                             </h5>
                         </li>
 
-                        <li>
-                            <h5>
-                                <i class="fas fa-water w-25 colorTitulos"></i>
-                                <span class="text-dark small">Jacuzzi</span>
-                            </h5>
-                        </li>
 
                         <li>
                             <h5>

@@ -6,13 +6,16 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "doctrine/inflector": "1.*",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "intervention/image": "^2.6",
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
-        "mercadopago/dx-php": "^2.4"
+        "mercadopago/dx-php": "^2.4",
+        "roave/better-reflection": "^4.12"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

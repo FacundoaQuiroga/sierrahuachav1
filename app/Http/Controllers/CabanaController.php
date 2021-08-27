@@ -27,6 +27,9 @@ class CabanaController extends Controller
 
         return response(json_encode($respuesta),200);
     }
+
+
+
 }
 // traigo la ruta de el slider "1,2,3,4" pero no la necesito
 if(isset($_POST["ruta"])){

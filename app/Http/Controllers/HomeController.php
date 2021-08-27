@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Foto;
 
 class HomeController extends Controller
 {
@@ -13,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth')->except('indexFotos');
     }
 
     /**
@@ -25,4 +26,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function indexFotos(){
+        $data = Foto::all();
+
+        return view('vistas.fotos', compact('data'));
+    }
+
+
+
+
 }

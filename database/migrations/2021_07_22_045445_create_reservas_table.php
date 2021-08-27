@@ -20,6 +20,7 @@ class CreateReservasTable extends Migration
             $table->text('apellido');
             $table->text('correo');
             $table->float('pago_reserva');
+            $table->text('numero_transaccion');
             $table->text('codigo_reserva');
             $table->text('descripcion_reserva');
             $table->date('fecha_ingreso');

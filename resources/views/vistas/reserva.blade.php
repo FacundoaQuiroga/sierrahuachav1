@@ -165,7 +165,7 @@ INFO RESERVAS
                         <label>Precio sugerido 2 personas:</label>
                         <select class="form-control elegirPlan">
 
-                            <option selected value="{{ $reservas1->precio }}, costo"> ${{ number_format($reservas1->precio) }} 1 dia 1 noche</option>
+                            <option selected value="{{ $reservas1->precio }}, costo"> ${{ floatval($reservas1->precio) }} 1 dia 1 noche</option>
 
                         </select>
                     </div>
@@ -186,13 +186,23 @@ INFO RESERVAS
 
                         <div class="col-12 col-lg-6 col-xl-7 text-center text-lg-left">
 
-                            <h1 class="precioReserva">$<span>{{number_format( $reservas1->precio * $dias  )}}</span> CLP</h1>
+                            <h1 class="precioReserva">$<span>{{( $reservas1->precio * $dias  )}}</span> CLP</h1>
 
                         </div>
 
                         <div class="col-12 col-lg-6 col-xl-5">
 
-                                <a href="/reserva/pago" type="submit" class="btn btn-dark btn-lg w-100">PAGAR <br> RESERVA</a>
+                                <a href="/pago" type="submit" class="pagarReserva"
+                                   idHabitacion="<?php echo $_POST["id-habitacion"]; ?>"
+                                   pagoReserva="{{ ( $reservas1->precio * $dias  )}}"
+                                   codigoReserva=""
+                                   fechaIngreso="<?php echo $_POST["fecha-ingreso"]; ?>"
+                                   fechaSalida="<?php echo $_POST["fecha-salida"]; ?>"
+                                   personas="2">
+                                    <button type="button" class="btn btn-dark btn-lg w-100">
+                                        PAGAR <br> RESERVA
+                                    </button>
+                                </a>
 
                         </div>
 

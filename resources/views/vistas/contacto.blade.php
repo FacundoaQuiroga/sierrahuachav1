@@ -7,7 +7,7 @@
             <h3>Rellene los siguientes datos y nos pondremos en contacto. <hr>  Los campos de adultos y niños no es obligatorio rellenar</h3>
         </div>
 
-        <form  class="formularioreserva" ACTION="enviar_email.php" METHOD="post"> <!-- formulario de reserva y envio a php -->
+        <form  class="formularioreserva" ACTION="{{asset('enviar_email.php')}}" METHOD="post"> <!-- formulario de reserva y envio a php -->
             <h1 class="form_titulo">Formulario Contacto</h1>
             <div class="contenedor-inputs">
 
@@ -28,7 +28,7 @@
 
 
                 <textarea name="message" id="message"  tabindex="9" placeholder="mensaje" class="input-100"></textarea>
-                <input type="submit" value="Enviar" class="buttonreserva"  tabindex="10"/><a href="index.html"></a>
+                <input type="submit" value="Enviar" class="buttonreserva"  tabindex="10"/><a href="/contacto"></a>
 
             </div>
 
